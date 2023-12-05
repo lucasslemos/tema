@@ -1,9 +1,19 @@
 const express = require('express');
+const cors = require('cors');
 const app = express();
-const port = 3001; // Porta na qual o servidor vai escutar
+const port = 3001;
 
-app.use('/cdn', express.static('/home/lucas/tema')); // Substitua 'tema' pelo caminho real para sua pasta
+// Configuração do CORS
+app.use(cors({
+  origin: 'http://localhost:3000' // Substitua com o domínio da sua aplicação Ruby on Rails, ou use '*' para permitir todos os domínios
+}));
+
+app.use('/cdn', express.static('/home/lucas/tema'));
 
 app.listen(port, () => {
   console.log(`Servidor de arquivos estáticos rodando em http://localhost:${port}`);
 });
+
+//npm install cors
+// node server.js
+
