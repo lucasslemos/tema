@@ -1,0 +1,10 @@
+version: '3.3'
+
+services:
+  cdn:
+    build: .
+    container_name: academico_cdn
+    volumes:
+      - /root/tema:/root/tema
+    ports:
+      - "3001:3001"

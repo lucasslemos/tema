@@ -5,10 +5,10 @@ const port = 3001;
 
 // Configuração do CORS
 app.use(cors({
-  origin: 'http://146.190.60.240'
+  origin: 'http://localhost'
 }));
 
-app.use('/cdn', express.static('/root/tema'));
+app.use('/cdn', express.static('/home/lucas/tema'));
 
 app.listen(port, () => {
   console.log(`Servidor de arquivos estáticos rodando em http://localhost:${port}`);
