@@ -4,9 +4,11 @@ const app = express();
 const port = 3001;
 
 // Configuração do CORS
-app.use(cors({
-  origin: 'http://146.190.60.240'
-}));
+//app.use(cors({
+//  origin: 'http://146.190.60.240'
+//}));
+
+app.use(cors());
 
 app.use('/cdn', express.static('/root/tema'));
 
