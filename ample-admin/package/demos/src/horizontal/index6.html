@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-bs-theme="light" data-color-theme="Red_Theme">
+
+<head>
+    @@include("partials/head.html")
+    <title>Ample Template by WrapPixel</title>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <img src="@@webRoot/assets/images/logos/logo-icon.svg" alt="loader" class="lds-ripple img-fluid" />
+    </div>
+    <div id="main-wrapper">
+        <!-- Sidebar Start -->
+        <aside class="left-sidebar with-vertical">
+            <div>@@include("partials/sidebar.html", { "page": "dashboard", })</div>
+        </aside>
+        <!--  Sidebar End -->
+        <div class="page-wrapper">
+            <!--  Header Start -->
+            <header class="topbar card rounded-0 border-0">
+                <div class="with-vertical">@@include("partials/header.html")</div>
+                <div class="app-header with-horizontal">
+                    @@include("partials/horizontal-header.html")
+                </div>
+            </header>
+            <!--  Header End -->
+            <aside class="left-sidebar with-horizontal">
+                @@include("partials/horizontal-sidebar.html", { "page": "dashboard",
+                })
+            </aside>
+
+            <div class="body-wrapper">
+                <div class="container-fluid">
+                    <!-- -------------------------------------------------------------- -->
+                    <!-- Breadcrumb -->
+                    <!-- -------------------------------------------------------------- -->
+                    @@include("partials/breadcrumb.html", {"title": "Dashboard 6", "subtitle": 'Home'})
+                    <!-- -------------------------------------------------------------- -->
+                    <!-- Breadcrumb End -->
+                    <!-- -------------------------------------------------------------- -->
+
+                    <!-- ============================================================== -->
+                    <!-- First Cards Row  -->
+                    <!-- ============================================================== -->
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Daliy Sales</h5>
+                                    <div class="text-end mt-3">
+                                        <span class="text-muted fw-normal">Today's Income</span>
+                                        <h2 class="mt-2 display-7 d-flex justify-content-end fw-medium">
+                                            <sup><iconify-icon icon="solar:arrow-up-outline"
+                                                    class="iconify-lg icon-center text-success"></iconify-icon>
+                                            </sup>$12,000
+                                        </h2>
+                                    </div>
+                                    <div class="text-success mb-1">20%</div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Weekly Sales</h5>
+                                    <div class="text-end mt-3">
+                                        <span class="text-muted fw-normal">Weekly Income</span>
+                                        <h2 class="mt-2 display-7 d-flex justify-content-end fw-medium">
+                                            <sup><iconify-icon icon="solar:arrow-down-outline"
+                                                    class="iconify-lg icon-center text-danger"></iconify-icon></sup>$5,000
+                                        </h2>
+                                    </div>
+                                    <div class="text-danger  mb-1">30%</div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-danger text" role="progressbar" style="width: 30%"
+                                            aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Monthly Sales</h5>
+                                    <div class="text-end mt-3">
+                                        <span class="text-muted fw-normal">Monthly Income</span>
+                                        <h2 class="mt-2 display-7  d-flex justify-content-end fw-medium">
+                                            <sup><iconify-icon icon="solar:arrow-up-outline"
+                                                    class="iconify-lg icon-center text-info"></iconify-icon></sup>$10,000
+                                        </h2>
+                                    </div>
+                                    <div class="text-info mb-1">60%</div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-info" role="progressbar" style="width: 60%"
+                                            aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Yearly Sales</h5>
+                                    <div class="text-end mt-3">
+                                        <span class="text-muted fw-normal">Yearly Income</span>
+                                        <h2 class="mt-2 display-7 d-flex justify-content-end fw-medium">
+                                            <sup><iconify-icon icon="solar:arrow-up-outline"
+                                                    class="iconify-lg icon-center text-warning"></iconify-icon></sup>$9,000
+                                        </h2>
+                                    </div>
+                                    <div class="text-warning mb-1">20%</div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 80%"
+                                            aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ============================================================== -->
+                    <!-- Country and Visit, Traffic cards Row  -->
+                    <!-- ============================================================== -->
+                    <div class="row">
+                        <div class="col-md-12 col-lg-6">
+                            <div class="card overflow-hidden">
+                                <div class="card-body bg-primary">
+                                    <div class="d-flex">
+                                        <div class="me-3 align-self-center">
+                                            <h1 class="text-white"><iconify-icon icon="solar:pie-chart-outline"
+                                                    class="fs-9 icon-center"></iconify-icon>
+                                            </h1>
+                                        </div>
+                                        <div>
+                                            <h4 class="card-title text-white">Bandwidth usage</h4>
+                                            <h5 class="card-subtitle text-white">March 2021</h5>
+                                        </div>
+                                    </div>
+                                    <div class="row pt-3">
+                                        <div class="col-4 align-self-center">
+                                            <div class="display-6 text-white fw-medium">50 GB</div>
+                                        </div>
+                                        <div class="col-8 align-self-center">
+                                            <div id="bandwidth-usage"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card -2  -->
+                            <div class="card overflow-hidden">
+                                <div class="card-body  bg-secondary">
+                                    <div class="d-flex">
+                                        <div class="me-3 align-self-center">
+                                            <h1 class="text-white">
+                                                <iconify-icon icon="solar:cloud-download-linear"
+                                                    class="fs-9 icon-center"></iconify-icon>
+                                            </h1>
+                                        </div>
+                                        <div>
+                                            <h4 class="card-title text-white">Download count</h4>
+                                            <h5 class="card-subtitle text-white">March 2021</h5>
+                                        </div>
+                                    </div>
+                                    <div class="row pt-3">
+                                        <div class="col-6 align-self-center">
+                                            <div class="display-6 text-white fw-medium">35487</div>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <div id="download-count"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-6">
+                            <div class="card">
+
+                              <div class="d-flex justify-content-between px-9 py-9 border-bottom">
+                                <div>
+                                  <h5 class="card-title">Notification</h5>
+                                  <div class="card-subtitle mb-0">Last 5 Days</div>
+                                </div>
+                                <div class="ms-auto mt-1">
+                                  <select class="form-select border-0 bg-inverse">
+                                    <option selected="">March</option>
+                                    <option value="1">February</option>
+                                    <option value="2">May</option>
+                                    <option value="3">April</option>
+                                  </select>
+                                </div>
+                              </div>
+                                <div class="p-3 pt-0">
+                                    <div class="message-box position-relative">
+                                        <div class="message-widget contact-widget position-relative">
+                                            <!-- Message -->
+                                            <a href="#" class="
+                          py-3
+                          px-2
+                          border-bottom
+                          d-flex
+                          align-items-start
+                          text-decoration-none
+                        ">
+                                                <div class="user-img position-relative d-inline-block">
+                                                    <span class="
+                              round
+                              text-white
+                              d-flex align-items-center justify-content-center
+                              text-center
+                              rounded round-50
+                              bg-primary
+                            "><iconify-icon icon="solar:chat-dots-outline"
+                                                            class="fs-7 icon-center"></iconify-icon>
+                                                    </span>
+                                                </div>
+                                                <div class="w-75 d-inline-block v-middle ps-3">
+                                                    <h6 class="
+                              text-truncate
+                              mb-0
+                            ">
+                                                        You have 3 new messages
+                                                    </h6>
+                                                    <span class="
+                              mail-desc
+                              fs-3
+                              text-truncate
+                              overflow-hidden
+                              text-nowrap
+                              d-block
+                              fw-normal
+                              text-muted
+                            ">Daniel Kristeen, Hanna Giover, Jeffry Brown</span>
+                                                    <span class="
+                              time
+                              fs-2
+                              text-truncate
+                              overflow-hidden
+                              text-nowrap
+                              d-block
+                              text-muted
+                            ">9:30 AM</span>
+                                                </div>
+                                            </a>
+
+
+                                            <a href="#" class="
+                        py-3
+                        px-2
+                        border-bottom
+                        d-flex
+                        align-items-start
+                        text-decoration-none
+                      ">
+                                                <div class="user-img position-relative d-inline-block">
+                                                    <span class="
+                            round
+                            text-white
+                            d-flex align-items-center justify-content-center
+                            text-center
+                            rounded round-50
+                            bg-secondary
+                          "><iconify-icon icon="solar:earth-outline" class="fs-7 icon-center"></iconify-icon>
+                                                    </span>
+                                                </div>
+                                                <div class="w-75 d-inline-block v-middle ps-3">
+                                                    <h6 class="
+                            text-truncate
+                            mb-0
+                          ">
+                                                        Newsfeed available
+                                                    </h6>
+                                                    <span class="
+                            mail-desc
+                            fs-3
+                            text-truncate
+                            overflow-hidden
+                            text-nowrap
+                            d-block
+                            fw-normal
+                            text-muted
+                          ">Todays headlines : Breakdancing Grandma Proves</span>
+                                                    <span class="
+                            time
+                            fs-2
+                            text-truncate
+                            overflow-hidden
+                            text-nowrap
+                            d-block
+                            text-muted
+                          ">9:10 AM</span>
+                                                </div>
+                                            </a>
+
+
+                                            <a href="#" class="
+                      py-3
+                      px-2
+                      border-bottom
+                      d-flex
+                      align-items-start
+                      text-decoration-none
+                    ">
+                                                <div class="user-img position-relative d-inline-block">
+                                                    <span class="
+                          round
+                          text-white
+                          d-flex align-items-center justify-content-center
+                          text-center
+                          rounded round-50
+                          bg-success
+                        "><iconify-icon icon="solar:dollar-outline" class="fs-7 icon-center"></iconify-icon>
+                                                    </span>
+                                                </div>
+                                                <div class="w-75 d-inline-block v-middle ps-3">
+                                                    <h6 class="
+                          text-truncate
+                          mb-0
+                        ">
+                                                        2 Invoices to pay
+                                                    </h6>
+                                                    <span class="
+                          mail-desc
+                          fs-3
+                          text-truncate
+                          overflow-hidden
+                          text-nowrap
+                          d-block
+                          fw-normal
+                          text-muted
+                        ">$3500 from Krishnan, $2000 from Akhil</span>
+                                                    <span class="
+                          time
+                          fs-2
+                          text-truncate
+                          overflow-hidden
+                          text-nowrap
+                          d-block
+                          text-muted
+                        ">9:08 AM</span>
+                                                </div>
+                                            </a>
+
+                                            <a href="#" class="
+                    py-3
+                    px-2
+                    border-bottom
+                    d-flex
+                    align-items-start
+                    text-decoration-none
+                  ">
+                                                <div class="user-img position-relative d-inline-block">
+                                                    <span class="
+                        round
+                        text-white
+                        d-flex align-items-center justify-content-center
+                        text-center
+                        rounded round-50
+                        bg-warning
+                      "><iconify-icon icon="solar:chat-round-line-broken"
+                                                            class="fs-7 icon-center"></iconify-icon>
+                                                    </span>
+                                                </div>
+                                                <div class="w-75 d-inline-block v-middle ps-3">
+                                                    <h6 class="
+                        text-truncate
+                        mb-0
+                      ">
+                                                        15 New comments
+                                                    </h6>
+                                                    <span class="
+                        mail-desc
+                        fs-3
+                        text-truncate
+                        overflow-hidden
+                        text-nowrap
+                        d-block
+                        fw-normal
+                        text-muted
+                      ">Jhonny : Hey this stuff is awesome and how can i</span>
+                                                    <span class="
+                        time
+                        fs-2
+                        text-truncate
+                        overflow-hidden
+                        text-nowrap
+                        d-block
+                        text-muted
+                      ">9:15 AM</span>
+                                                </div>
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ============================================================== -->
+                    <!-- Country Visit, Weather cards Row  -->
+                    <!-- ============================================================== -->
+                    <div class="row">
+                        <div class="col-lg-6 d-flex align-items-strech">
+                            <div class="card w-100">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <h4 class="card-title">Top Selling</h4>
+                                            <div class="card-subtitle mb-0">Last 5 Days</div>
+                                        </div>
+                                        <div class="ms-auto">
+                                          <select class="form-select border-0 bg-inverse">
+                                            <option selected="">March</option>
+                                            <option value="1">February</option>
+                                            <option value="2">May</option>
+                                            <option value="3">April</option>
+                                          </select>
+                                        </div>
+                                    </div>
+                                    <div id="top-selling"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 d-flex align-items-strech">
+                            <div class="card w-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Top Earning</h5>
+                                    <div id="top-earning" class="mt-5"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 col-lg-6">
+                          <div class="card w-100">
+                            <div class="px-9 py-9 border-bottom">
+                              <h5 class="card-title">Recent Chat</h5>
+                              <div class="card-subtitle mb-0">See Recent Chat</div>
+                            </div>
+                            <div class="card-body">
+                              <div class="chat-box scrollable w-100" style="height: 500px" data-simplebar="">
+                                <!--chat Row -->
+                                <ul class="chat-list m-0 p-0">
+                                  <!--chat Row -->
+                                  <li class="mt-4">
+                                    <div class="chat-img d-inline-block align-top">
+                                      <img src="@@webRoot/assets/images/profile/user-5.jpg" alt="user" class="rounded round-50" />
+                                    </div>
+                                    <div class="chat-content ps-3 d-inline-block">
+                                      <h5 class="fs-3">
+                                        James Anderson
+                                      </h5>
+                                      <div class="
+                                          message
+                                          fs-3
+                                          bg-secondary
+                                          text-white
+                                          d-inline-block
+                                          mb-2
+                                          fw-normal
+                                          shadow
+                                        ">
+                                        Lorem Ipsum is simply dummy text of the printing &
+                                        type setting industry.
+                                      </div>
+                                    </div>
+                                    <div class="
+                                        chat-time
+                                        d-inline-block
+                                        text-end
+                                        fs-2
+                                        font-weight-medium
+                                      ">
+                                      10:56 am
+                                    </div>
+                                  </li>
+                                  <!--chat Row -->
+                                  <li class="mt-4">
+                                    <div class="chat-img d-inline-block align-top">
+                                      <img src="@@webRoot/assets/images/profile/user-6.jpg" alt="user" class="rounded round-50" />
+                                    </div>
+                                    <div class="chat-content ps-3 d-inline-block">
+                                      <h5 class="fs-3">Bianca Doe</h5>
+                                      <div class="
+                                          message
+                                          fs-3
+                                          bg-secondary
+                                          text-white
+                                          d-inline-block
+                                          mb-2
+                                          fw-normal
+                                        ">
+                                        It’s Great opportunity to work.
+                                      </div>
+                                    </div>
+                                    <div class="
+                                        chat-time
+                                        d-inline-block
+                                        text-end
+                                        fs-2
+                                        font-weight-medium
+                                      ">
+                                      10:57 am
+                                    </div>
+                                  </li>
+                                  <!--chat Row -->
+                                  <li class="odd mt-4">
+                                    <div class="chat-content ps-3 d-inline-block text-end">
+                                      <div class="
+                                          message
+                                          fs-3
+                                          bg-secondary-subtle
+                                          d-inline-block
+                                          mb-2
+                                          font-weight-medium
+                                        ">
+                                        I would love to join the team.
+                                      </div>
+                                      <br />
+                                    </div>
+                                    <div class="
+                                        chat-time
+                                        d-inline-block
+                                        text-end
+                                        fs-2
+                                        font-weight-medium
+                                      ">
+                                      10:58 am
+                                    </div>
+                                  </li>
+                                  <!--chat Row -->
+                                  <li class="odd mt-4">
+                                    <div class="chat-content ps-3 d-inline-block text-end">
+                                      <div class="
+                                          message
+                                          fs-3
+                                          bg-secondary-subtle
+                                          d-inline-block
+                                          mb-2
+                                          font-weight-medium
+                                        ">
+                                        Whats budget of the ample admin project.
+                                      </div>
+                                      <br />
+                                    </div>
+                                    <div class="
+                                        chat-time
+                                        d-inline-block
+                                        text-end
+                                        fs-2
+                                        font-weight-medium
+                                      ">
+                                      10:59 am
+                                    </div>
+                                  </li>
+                                  <!--chat Row -->
+                                  <li class="mt-4">
+                                    <div class="chat-img d-inline-block align-top">
+                                      <img src="@@webRoot/assets/images/profile/user-7.jpg" alt="user" class="rounded round-50" />
+                                    </div>
+                                    <div class="chat-content ps-3 d-inline-block">
+                                      <h5 class="fs-3">
+                                        Angelina Rhodes
+                                      </h5>
+                                      <div class="
+                                          message
+                                          fs-3
+                                          bg-secondary
+                                          text-white
+                                          d-inline-block
+                                          mb-2
+                                          fw-normal
+            
+                                        ">
+                                        Well we have good budget for the project
+                                      </div>
+                                    </div>
+                                    <div class="
+                                        chat-time
+                                        d-inline-block
+                                        text-end
+                                        fs-2
+                                        font-weight-medium
+                                      ">
+                                      11:00 am
+                                    </div>
+                                  </li>
+                                  <!--chat Row -->
+                                  <li class="mt-4">
+                                    <div class="chat-img d-inline-block align-top">
+                                      <img src="@@webRoot/assets/images/profile/user-3.jpg" alt="user" class="rounded round-50" />
+                                    </div>
+                                    <div class="chat-content ps-3 d-inline-block">
+                                      <h5 class="fs-3">
+                                        James Anderson
+                                      </h5>
+                                      <div class="
+                                          message
+                                          fs-3
+                                          bg-secondary
+                                          text-white
+                                          d-inline-block
+                                          mb-2
+                                          fw-normal
+                                        ">
+                                        Lorem Ipsum is simply dummy text of the printing &
+                                        type setting industry.
+                                      </div>
+                                    </div>
+                                    <div class="
+                                        chat-time
+                                        d-inline-block
+                                        text-end
+                                        fs-2
+                                        font-weight-medium
+                                      ">
+                                      10:56 am
+                                    </div>
+                                  </li>
+                                  <!--chat Row -->
+                                  <li class="odd mt-4">
+                                    <div class="chat-content ps-3 d-inline-block text-end">
+                                      <div class="
+                                          message
+                                          fs-3
+                                          bg-secondary-subtle
+                                          d-inline-block
+                                          mb-2
+                                          font-weight-medium
+                                        ">
+                                        Whats budget of the new project.
+                                      </div>
+                                      <br />
+                                    </div>
+                                    <div class="
+                                        chat-time
+                                        d-inline-block
+                                        text-end
+                                        fs-2
+                                        font-weight-medium
+                                      ">
+                                      10:59 am
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="card-body border-top">
+                              <div class="row d-flex align-items-center">
+                                <div class="col-9">
+                                  <div class="input-field mt-0 mb-0">
+                                    <input type="text" id="textarea1" placeholder="Type and enter" class="form-control border-0" />
+                                  </div>
+                                </div>
+                                <div class="col-3">
+                                  <div class="d-flex justify-content-end">
+                                    <a class="btn round-50 p-0 btn-success btn text-white icon-center"
+                                      href="javascript:void(0)"><iconify-icon icon="solar:plain-outline"
+                                        class="fs-6 icon-center"></iconify-icon></a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-12 col-lg-6">
+                          <div class="card w-100 ">
+                            <div class="px-9 py-9 border-bottom">
+                              <h5 class="card-title">Chat Listing</h5>
+                              <div class="card-subtitle mb-0">This Months Chat</div>
+                            </div>
+            
+                            <div class="card-body">
+                              <div class="py-2">
+                                <ul class="list-style-none chat-list">
+                                  <li class="mb-4">
+                                    <a href="javascript:void(0)">
+                                      <div class="d-flex align-items-center">
+                                        <img src="@@webRoot/assets/images/profile/user-5.jpg" class="rounded round-50" />
+                                        <div class="ms-3">
+                                          <h6 class="mb-0">Jack Connor</h5>
+                                            <small class="text-success">Online</small>
+                                        </div>
+                                        <div class="ms-auto chat-icon">
+                                          <button type="button" class="
+                                            btn round-40 p-0 bg-success-subtle
+                                            text-success
+                                            
+                                          ">
+                                            <iconify-icon icon="solar:phone-outline" class="fs-6 icon-center"></iconify-icon>
+                                          </button>
+                                          <button type="button" class="
+                                            btn round-40 p-0 bg-secondary-subtle
+                                            text-secondary
+                                            
+                                            ms-2
+                                          ">
+                                            <iconify-icon icon="solar:chat-round-outline" class="fs-6 icon-center"></iconify-icon>
+                                          </button>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="mb-4">
+                                    <a href="javascript:void(0)">
+                                      <div class="d-flex align-items-center">
+                                        <img src="@@webRoot/assets/images/profile/user-1.jpg" class="rounded round-50" />
+                                        <div class="ms-3">
+                                          <h6 class="mb-0">Joe Harry</h5>
+                                            <small class="text-muted">Offline</small>
+                                        </div>
+                                        <div class="ms-auto chat-icon">
+                                          <button type="button" class="
+                                            btn round-40 p-0 bg-success-subtle
+                                            text-success
+                                            
+                                          ">
+                                            <iconify-icon icon="solar:phone-outline" class="fs-6 icon-center"></iconify-icon>
+                                          </button>
+                                          <button type="button" class="
+                                            btn round-40 p-0 bg-secondary-subtle
+                                            text-secondary
+                                            
+                                            ms-2
+                                          ">
+                                            <iconify-icon icon="solar:chat-round-outline" class="fs-6 icon-center"></iconify-icon>
+                                          </button>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="mb-4">
+                                    <a href="javascript:void(0)">
+                                      <div class="d-flex align-items-center">
+                                        <img src="@@webRoot/assets/images/profile/user-2.jpg" class="rounded round-50" />
+                                        <div class="ms-3">
+                                          <h6 class="mb-0">Megan Lauren</h5>
+                                            <small class="text-success">Online</small>
+                                        </div>
+                                        <div class="ms-auto chat-icon">
+                                          <button type="button" class="
+                                            btn round-40 p-0 bg-success-subtle
+                                            text-success
+                                            
+                                          ">
+                                            <iconify-icon icon="solar:phone-outline" class="fs-6 icon-center"></iconify-icon>
+                                          </button>
+                                          <button type="button" class="
+                                            btn round-40 p-0 bg-secondary-subtle
+                                            text-secondary
+                                            
+                                            ms-2
+                                          ">
+                                            <iconify-icon icon="solar:chat-round-outline" class="fs-6 icon-center"></iconify-icon>
+                                          </button>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="mb-4">
+                                    <a href="javascript:void(0)">
+                                      <div class="d-flex align-items-center">
+                                        <img src="@@webRoot/assets/images/profile/user-3.jpg" class="rounded round-50" />
+                                        <div class="ms-3">
+                                          <h6 class="mb-0">Isla Bethany</h5>
+                                            <small class="text-danger">Busy</small>
+                                        </div>
+                                        <div class="ms-auto chat-icon">
+                                          <button type="button" class="
+                                            btn round-40 p-0 bg-success-subtle
+                                            text-success
+                                            
+                                          ">
+                                            <iconify-icon icon="solar:phone-outline" class="fs-6 icon-center"></iconify-icon>
+                                          </button>
+                                          <button type="button" class="
+                                            btn round-40 p-0 bg-secondary-subtle
+                                            text-secondary
+                                            
+                                            ms-2
+                                          ">
+                                            <iconify-icon icon="solar:chat-round-outline" class="fs-6 icon-center"></iconify-icon>
+                                          </button>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="mb-4">
+                                    <a href="javascript:void(0)">
+                                      <div class="d-flex align-items-center">
+                                        <img src="@@webRoot/assets/images/profile/user-4.jpg" class="rounded round-50" />
+                                        <div class="ms-3">
+                                          <h6 class="mb-0">Isabella O'Brien</h5>
+                                            <small class="text-muted">Offline</small>
+                                        </div>
+                                        <div class="ms-auto chat-icon">
+                                          <button type="button" class="
+                                            btn round-40 p-0 bg-success-subtle
+                                            text-success
+                                            
+                                          ">
+                                            <iconify-icon icon="solar:phone-outline" class="fs-6 icon-center"></iconify-icon>
+                                          </button>
+                                          <button type="button" class="
+                                            btn round-40 p-0 bg-secondary-subtle
+                                            text-secondary
+                                            
+                                            ms-2
+                                          ">
+                                            <iconify-icon icon="solar:chat-round-outline" class="fs-6 icon-center"></iconify-icon>
+                                          </button>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="mb-4">
+                                    <a href="javascript:void(0)">
+                                      <div class="d-flex align-items-center">
+                                        <img src="@@webRoot/assets/images/profile/user-5.jpg" class="rounded round-50" />
+                                        <div class="ms-3">
+                                          <h6 class="mb-0">Jack Connor</h5>
+                                            <small class="text-success">Online</small>
+                                        </div>
+                                        <div class="ms-auto chat-icon">
+                                          <button type="button" class="
+                                            btn round-40 p-0 bg-success-subtle
+                                            text-success
+                                            
+                                          ">
+                                            <iconify-icon icon="solar:phone-outline" class="fs-6 icon-center"></iconify-icon>
+                                          </button>
+                                          <button type="button" class="
+                                            btn round-40 p-0 bg-secondary-subtle
+                                            text-secondary
+                                            
+                                            ms-2
+                                          ">
+                                            <iconify-icon icon="solar:chat-round-outline" class="fs-6 icon-center"></iconify-icon>
+                                          </button>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="mb-4">
+                                    <a href="javascript:void(0)">
+                                      <div class="d-flex align-items-center">
+                                        <img src="@@webRoot/assets/images/profile/user-6.jpg" class="rounded round-50" />
+                                        <div class="ms-3">
+                                          <h6 class="mb-0">Joe Harry</h5>
+                                            <small class="text-muted">Offline</small>
+                                        </div>
+                                        <div class="ms-auto chat-icon">
+                                          <button type="button" class="
+                                            btn round-40 p-0 bg-success-subtle
+                                            text-success
+                                            
+                                          ">
+                                            <iconify-icon icon="solar:phone-outline" class="fs-6 icon-center"></iconify-icon>
+                                          </button>
+                                          <button type="button" class="
+                                            btn round-40 p-0 bg-secondary-subtle
+                                            text-secondary
+                                            
+                                            ms-2
+                                          ">
+                                            <iconify-icon icon="solar:chat-round-outline" class="fs-6 icon-center"></iconify-icon>
+                                          </button>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="javascript:void(0)">
+                                      <div class="d-flex align-items-center">
+                                        <img src="@@webRoot/assets/images/profile/user-7.jpg" class="rounded round-50" width="40" />
+                                        <div class="ms-3">
+                                          <h6 class="mb-0">Megan Lauren</h5>
+                                            <small class="text-success">Online</small>
+                                        </div>
+                                        <div class="ms-auto chat-icon">
+                                          <button type="button" class="
+                                            btn round-40 p-0 bg-success-subtle
+                                            text-success
+                                            
+                                          ">
+                                            <iconify-icon icon="solar:phone-outline" class="fs-6 icon-center"></iconify-icon>
+                                          </button>
+                                          <button type="button" class="
+                                            btn round-40 p-0 bg-secondary-subtle
+                                            text-secondary
+                                            
+                                            ms-2
+                                          ">
+                                            <iconify-icon icon="solar:chat-round-outline" class="fs-6 icon-center"></iconify-icon>
+                                          </button>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+            
+                          </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <!----Footer--->
+                @@include("partials/footer.html")
+                <!----Footer End--->
+            </div>
+            @@include("partials/customizer.html")
+        </div>
+        @@include("partials/header-components/dd-searchbar.html")
+    </div>
+    <div class="dark-transparent sidebartoggler"></div>
+    @@include("partials/scripts.html")
+    <script src="@@webRoot/node_modules/apexcharts/dist/apexcharts.min.js"></script>
+    <script src="@@webRoot/assets/js/dashboards/dashboard6.js"></script>
+</body>
+
+</html>

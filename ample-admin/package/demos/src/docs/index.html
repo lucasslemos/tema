@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-bs-theme="light" data-color-theme="Red_Theme">
+  <head>
+    @@include("../main/partials/head.html")
+
+    <link
+      rel="stylesheet"
+      href="@@webRoot/node_modules/prismjs/themes/prism-okaidia.min.css"
+    />
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div class="preloader">
+    <img src="@@webRoot/assets/images/logos/logo-icon.svg" alt="loader" class="lds-ripple img-fluid" />
+  </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper" class="docs">
+      <!-- ============================================================== -->
+      <!-- End Topbar header -->
+      <!-- ============================================================== -->
+      <!-- ============================================================== -->
+      <!-- Left Sidebar - style you can find in sidebar.scss  -->
+      <!-- ============================================================== -->
+      <!--Desktop view sidebar menu-->
+      <aside class="left-sidebar with-vertical shadow-none">
+        @@include("./partials/sidebar.html")
+      </aside>
+
+      <!-- ============================================================== -->
+      <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+      <!-- ============================================================== -->
+      <div class="page-wrapper">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar position-relative">
+          <div
+            class="navbar navbar-header bg-white d-flex align-items-center justify-content-between py-0 fixed-top"
+          >
+
+          <div class="brand-logo d-flex align-items-center justify-content-between ps-3">
+            <a href="@@webRoot/main/index.html" class="text-nowrap logo-img">
+              <b class="logo-icon">
+                <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+                <!-- Dark Logo icon -->
+                <img
+                  src="@@webRoot/assets/images/logos/logo-icon.svg"
+                  alt="homepage"
+                  class="dark-logo"
+                />
+                <!-- Light Logo icon -->
+                <img
+                  src="@@webRoot/assets/images/logos/logo-light-icon.svg"
+                  alt="homepage"
+                  class="light-logo"
+                />
+              </b>
+              <!--End Logo icon -->
+              <!-- Logo text -->
+              <span class="logo-text">
+                <!-- dark Logo text -->
+                <img
+                  src="@@webRoot/assets/images/logos/logo-text.svg"
+                  alt="homepage"
+                  class="dark-logo ps-2"
+                />
+                <!-- Light Logo text -->
+                <img
+                  src="@@webRoot/assets/images/logos/logo-light-text.svg"
+                  class="light-logo ps-2"
+                  alt="homepage"
+                />
+              </span>
+            </a>
+          </div>
+            <!-- ============================================================== -->
+            <!-- Toggle which is visible on mobile only -->
+            <!-- ============================================================== -->
+            <!-- Logo icon -->
+            <div class="d-flex align-items-center">
+              <!---Mobile view canvas button--->
+              <a
+                class="fs-8 subtext d-xl-none d-block sidebartoggler pe-3"
+                href="javascript:void(0)"
+                role="button"
+              >
+                <i class="ti ti-menu-2"></i>
+              </a>
+            </div>
+          </div>
+        </header>
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div
+          class="body-wrapper"
+          data-bs-spy="scroll"
+          data-bs-target="#navbar-example3"
+          data-bs-smooth-scroll="true"
+          tabindex="0"
+        >
+          <!-- ============================================================== -->
+          <!-- Container fluid  -->
+          <!-- ============================================================== -->
+          <div class="container-fluid mt-4">
+            <div>
+              <!-- ============================================================== -->
+              <!-- Start Page Content -->
+              <!-- ============================================================== -->
+              <h4 class="mt-4 lh-base">
+                Ample is built with Most Popular Framework Bootstrap
+                .Ample Bootstrap Dashboard comes with lots of ready to use
+                page templates, amazing 6 Dashboard variations, Tables, Charts
+                and Form examples and lot more.
+              </h4>
+              <div class="mt-5">
+                <h5 class="font-weight-normal subtext">
+                  Ample Bootstrap Dashboard is built with
+                  <a href="https://getbootstrap.com/" class="text-primary" target="_blank"
+                    >Bootstrap 5</a
+                  >
+                </h5>
+
+                <h5 class="font-weight-normal subtext mt-3">
+                  We have included
+                  <span class="font-medium text-dark">Figma File</span> file to
+                  extend your project development.
+                </h5>
+
+                <h5 class="font-weight-normal subtext mt-3">
+                  These theme is ready to use and you can totally customize as
+                  per your requirement.
+                </h5>
+
+                <h5 class="font-weight-normal subtext mt-3">
+                  For Customize, You should have knowledge of Bootstrap, CSS and
+                  HTML to be able to modify these template.
+                </h5>
+              </div>
+              <h3 class="mt-5">Support</h3>
+              <div class="mt-4">
+                <h5 class="font-weight-normal subtext lh-base">
+                  We at wrappixel.com offers affordable Customization services
+                  for our templates. For any Customization work, please submit
+                  ticket on
+                  <a href="http://wrappixel.com/support/" class="text-primary"
+                    >wrappixel.com/support</a
+                  >
+                </h5>
+                <h5 class="font-weight-normal subtext mt-3 lh-base">
+                  Before creating ticket, please make sure your question is
+                  regarding support only and not for Customization and also
+                  follow full documentation to make sure the question / bug you
+                  are posting is not mentioned in documentation.
+                </h5>
+                <div class="card mt-4">
+                  <div class="card-body">
+                    <h4 >Includes</h4>
+                    <ul class="mb-0">
+                      <li class="font-16 py-1 subtext">
+                        Answering your questions or problems regarding the
+                        template.
+                      </li>
+                      <li class="font-16 py-1 subtext">
+                        Giving solution to the Bugs reported.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card mt-4">
+                  <div class="card-body">
+                    <h4 >Does not Includes</h4>
+                    <ul class="mb-0">
+                      <li class="font-16 py-1 subtext">
+                        Customization Work
+                      </li>
+                      <li class="font-16 py-1 subtext">
+                        Any Installation Work
+                      </li>
+                      <li class="font-16 py-1 subtext">
+                        Support for any Third Party Plugins / Software
+                      </li>
+                      <li class="font-16 py-1 subtext">
+                        Support or Guide for How to integrate with any
+                        technologies (like, PHP, .net, Java etc)
+                      </li>
+                      <li class="font-16 pt-1 subtext">
+                        Solve bug in your implemented template
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ============================================================== -->
+          <!-- End Container fluid  -->
+          <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+      </div>
+    </div>
+    <div class="dark-transparent sidebartoggler"></div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- End Page -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    @@include("../main/partials/scripts.html")
+    <script src="@@webRoot/node_modules/prismjs/prism.js"></script>
+    <!-- End JS -->
+  </body>
+</html>

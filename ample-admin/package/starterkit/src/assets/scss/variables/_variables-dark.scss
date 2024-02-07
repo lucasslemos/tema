@@ -1,0 +1,371 @@
+//
+// using scss variables
+//
+$border-color-dark: #333f55 !default;
+$body-color-dark: #7c8fac !default;
+$body-bg-dark: #161b22 !default;
+$link-color-dark: #7c8fac !default;
+$body-secondary-color-dark: rgba($body-color-dark, 1) !default;
+$heading-color: #EAEFF4;
+$primary-bg-subtle-dark: #253662 !default;
+$secondary-bg-subtle-dark: #1c455d !default;
+$success-bg-subtle-dark: #1b3c48 !default;
+$info-bg-subtle-dark: #223662 !default;
+$warning-bg-subtle-dark: #4d3a2a !default;
+$danger-bg-subtle-dark: #4b313d !default;
+$light-bg-subtle-dark: #465670 !default;
+$dark-bg-subtle-dark: #1f2a36 !default;
+$link-hover-color-dark: $primary !default;
+$bg-dark: #192430 !default;
+$dropdown-dark-link-hover-bg: $primary-bg-subtle-dark !default;
+
+
+//
+// using css variables
+//
+[data-bs-theme="dark"] {
+  --bs-heading-color: #eaeff4 !important;
+  --bs-body-color: rgb(234 239 244 / 60%) !important;
+  --bs-card-subtitle-color: rgb(234 239 244 / 60%) !important;
+  --bs-secondary-color: rgb(234 239 244 / 60%) !important;
+
+  .apexcharts-datalabel-label {
+    fill: $heading-color !important;
+  }
+
+  .offcanvas{
+    --bs-offcanvas-bg: #192430 !important;
+  }
+
+  .jvectormap-container {
+    background-color: #192430 !important;
+  }
+
+  hr {
+    border-top: 1px solid #ebf1f6;
+    opacity: 0.1;
+  }
+
+    #main-wrapper {
+    background-color:$body-bg-dark;
+  }
+
+  a {
+    color: #eaeff4 !important;
+  }
+
+  .sidebar-nav #sidebarnav>.sidebar-item .first-level,
+  .sidebar-nav #sidebarnav>.sidebar-item .second-level {
+    background-color: $bg-dark !important;
+  }
+
+  .left-sidebar {
+    background-color: $bg-dark;
+  }
+
+  //Apps Menu
+  #mobilenavbar {
+    .brand-logo {
+      padding: 0 0;
+    }
+    .sidebar-nav #sidebarnav > .sidebar-item .first-level, 
+    .sidebar-nav #sidebarnav > .sidebar-item .second-level{
+      background-color: transparent !important;
+    }
+
+    .sidebar-nav {
+      ul {
+        .sidebar-item {
+          .sidebar-link {
+            color: $white !important;
+            font-weight: 600;
+            opacity: 0.8 !important;
+
+            &.active {
+              background-color: transparent !important;
+            }
+          }
+        }
+
+        li {
+          .has-arrow::after {
+            border-color: $white !important;
+          }
+
+          .has-arrow.active::after {
+            border-color: $white !important;
+          }
+        }
+      }
+    }
+  }
+  
+  &[data-layout="horizontal"] {
+    .sidebar-nav {
+      #sidebarnav {
+        flex-wrap: wrap;
+
+        >.sidebar-item>.has-arrow:after {
+          display: block;
+        }
+
+        .sidebar-item {
+          .first-level {
+            .sidebar-link {
+              color: $white !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Calendar
+
+  .app-calendar {
+    .fc {
+      .fc-header-toolbar {
+        .fc-toolbar-chunk {
+
+          .fc-prev-button,
+          .fc-next-button {
+            background-color: $bg-dark;
+            border-color: $bg-dark;
+          }
+
+          .fc-button-group {
+            .fc-button {
+              background-color: $bg-dark;
+              border-color: $bg-dark;
+            }
+
+            .fc-button-active {
+              background-color: $primary;
+              color: $white;
+            }
+          }
+        }
+      }
+
+      .fc-daygrid-day.fc-day-today {
+        background-color: $bg-dark;
+
+        .fc-daygrid-day-frame {
+          background-color: $bg-dark;
+        }
+      }
+    }
+
+    .fc-theme-standard {
+      td {
+        border-color: $bg-dark;
+      }
+    }
+  }
+
+  .tooltip-inner {
+    color: $body-color-dark !important;
+  }
+
+  .bg-white {
+    --bs-white-rgb: $bg-dark ;
+  }
+
+  .card {
+    --bs-card-bg: #192430;
+    --bs-card-title-color: #eaeff4;
+    --bs-card-subtitle-color: #7c8fac;
+    --bs-card-box-shadow: rgba(145, 158, 171, 0.3) 0px 0px 2px 0px,
+      rgba(145, 158, 171, 0.02) 0px 12px 24px -4px;
+  }
+
+  .dropdown-menu {
+    --bs-dropdown-box-shadow: rgba(145, 158, 171, 0.3) 0px 0px 2px 0px,
+      rgba(145, 158, 171, 0.02) 0px 12px 24px -4px;
+    --bs-dropdown-bg: #192430;
+    --bs-dropdown-link-color: #EAEFF4;
+    --bs-dropdown-link-hover-color: #EAEFF4;
+    --bs-dropdown-link-hover-bg: transparent;
+  }
+
+  .text-dark {
+    color: $heading-color !important;
+  }
+
+  .table {
+    --bs-table-border-color: #333f55;
+    --bs-table-color: #fff;
+
+    th,
+    td {
+      --bs-table-color: #fff;
+    }
+  }
+
+  .table-hover>tbody>tr:hover>* {
+    --bs-table-bg-state: $body-bg-dark;
+    --bs-table-color: #fff;
+  }
+
+  .table-striped>tbody>tr:nth-of-type(odd)>* {
+    --bs-table-bg-type: transparent;
+  }
+
+
+  .card,
+  .form-select,
+  .form-control,
+  .nav-tabs .nav-link.active,
+  .nav-tabs .nav-item.show .nav-link,
+  .list-group-item,
+  .modal-content,
+  .page-link,
+  .page-item.disabled .page-link,
+  .note-editor.note-frame .note-editing-area .note-editable,
+  .note-editor.note-frame .note-statusbar,
+  .lobilists .lobilist,
+  .jsgrid-header-row>.jsgrid-header-cell,
+  .jsgrid-row>.jsgrid-cell,
+  .css-bar:after,
+  .select2-container--default .select2-selection--single,
+  .select2-container--default .select2-selection--multiple,
+  .select2-container--classic .select2-selection--single,
+  .dtp>.dtp-content,
+  .popover,
+  .popover-header,
+  .right-part.mail-list,
+  .right-part.mail-details,
+  .right-part.mail-compose,
+  .left-part,
+  .card-footer,
+  .typeahead.form-control,
+  .select2-dropdown,
+  .accordion-button:not(.collapsed),
+  .jvectormap-container,
+  .list-group-item-action:active,
+  .form-floating>.form-control:focus~label::after,
+  .form-floating>.form-control:not(:placeholder-shown)~label::after,
+  .form-floating>.form-control-plaintext~label::after,
+  .form-floating>.form-select~label::after {
+    background-color: $bg-dark !important;
+  }
+
+  .jsgrid-grid-header,
+  .jsgrid-header-row>.jsgrid-header-cell,
+  .jsgrid-header-cell,
+  .jsgrid-cell {
+    background: $body-bg-dark !important;
+  }
+
+  .jsgrid-edit-row>.jsgrid-cell,
+  .jsgrid-filter-row>.jsgrid-cell,
+  .jsgrid-grid-body,
+  .jsgrid-grid-header,
+  .jsgrid-header-row>.jsgrid-header-cell,
+  .jsgrid-insert-row>.jsgrid-cell {
+    border: 1px solid $border-color-dark;
+  }
+
+  .accordion {
+    --bs-accordion-bg: $bg-dark;
+
+  }
+
+  .accordion-item,
+  .accordion-item:focus {
+    --bs-accordion-btn-color: #eaeff4;
+    --bs-accordion-border-color: #333f55;
+  }
+
+  .accordion-button {
+    --bs-accordion-btn-bg: $bg-dark;
+  }
+
+  .accordion-button:not(.collapsed) {
+    color: #eaeff4;
+  }
+
+  .nav-tabs .nav-link,
+  .nav-pills .nav-link,
+  .breadcrumb-item+.breadcrumb-item::before {
+    color: $link-color-dark;
+  }
+
+  .input-group-text {
+    background-color: $light-bg-subtle-dark;
+    border: var(--bs-table-border-color);
+    color: $body-color-dark;
+  }
+
+  .form-check-input {
+    border: 1.25px solid $light-bg-subtle-dark;
+  }
+
+  .bootstrap-switch .bootstrap-switch-label,
+  .app-chat-offcanvas {
+    background: $body-bg-dark;
+  }
+
+  .form-label,
+  .col-form-label {
+    color: $body-color-dark !important;
+  }
+
+
+  .bg-light,
+  .striped-rows .row:nth-child(odd),
+  .bg-hover-light-black:hover {
+    background-color: $bg-dark !important;
+    color: var(--bs-card-title-color) !important;
+  }
+
+  .text-bg-light {
+    background-color: #26313d !important;
+  }
+
+  .activity-box .date-divider {
+    border-color: rgba(255, 255, 255, .2) !important;
+  }
+
+
+  .dropdown-item:hover,
+  .dropdown-item:focus {
+    background-color: $dark-bg-subtle-dark;
+  }
+
+  .form-select,
+  .form-select:focus,
+  .form-control,
+  .form-control:focus {
+    border-color: $border-color-dark;
+    color: $body-color-dark;
+    background-color: $body-bg-dark;
+  }
+
+  .connect-sorting-todo,
+  .connect-sorting {
+    background: var(--bs-dark-bg-subtle);
+  }
+
+  .list-group-item {
+    --bs-list-group-color: #fff;
+  }
+
+  a:hover {
+
+    h6,
+    .h6,
+    h5,
+    .h5,
+    h4,
+    .h4,
+    h3,
+    .h3,
+    h2,
+    .h2,
+    h1,
+    .h1 {
+      color: var(--bs-primary);
+    }
+  }
+}
