@@ -17,5 +17,4 @@ COPY . .
 EXPOSE 3001
 
 # Command to run your application
-# CMD ["node", "server.js"]
-CMD ["node", "server_dev.js"]
+CMD ["node", "server.js"]
