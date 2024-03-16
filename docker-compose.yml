@@ -6,5 +6,6 @@ services:
     container_name: dttrilhas_cdn
     volumes:
       - /root/tema:/root/tema
+      # - /home/lucas/tema:/home/lucas/tema
     ports:
       - "3001:3001"
