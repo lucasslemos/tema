@@ -1,14 +1,14 @@
 const express = require('express');
-const cors = require('cors');
+//const cors = require('cors');
 const app = express();
 const port = 3001;
 
 // Configuração do CORS
-// app.use(cors({
-//   origin: 'http://localhost:3001'
-// }));
+//app.use(cors({
+//  origin: 'https://profthiagotelis.com.br'
+//}));
 
-app.use(cors());
+//app.use(cors());
 
 // app.use('/cdn', express.static('/home/lucas/tema'));
 app.use('/cdn', express.static('/root/tema'));
